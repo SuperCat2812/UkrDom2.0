@@ -123,6 +123,12 @@
     -o-transform: translateY(-1px);
     transform: translateY(-1px);
   }
+  .mobil{
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 6%;
+  }
   .hamburger {
     display: block;
     margin-top: 6%;
@@ -250,7 +256,7 @@
   .header.scrolled .logo_container {
     height: 77px;
   }
-  .hamburger i {
+  .mobil i {
     font-size: 20px;
   }
   .logo_container,

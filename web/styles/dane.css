@@ -362,11 +362,11 @@ section {
   font-weight: 500;
   color: #283290;
 }
-.hamburger {
+.mobil {
   display: none;
   cursor: pointer;
 }
-.hamburger i {
+.mobil i {
   font-size: 24px;
   color: #272727;
 }

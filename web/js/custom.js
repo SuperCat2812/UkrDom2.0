@@ -87,8 +87,8 @@ $(document).ready(function () {
   */
 
   function initMenu() {
-    if ($(".hamburger").length) {
-      var hamb = $(".hamburger");
+    if ($(".mobil").length) {
+      var hamb = $(".mobil");
 
       hamb.on("click", function (event) {
         event.stopPropagation();
