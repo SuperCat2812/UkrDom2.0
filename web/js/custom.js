@@ -33,11 +33,13 @@ $(document).ready(function () {
   $(window).on("resize", function () {
     setHeader();
     setDane();
+    setDane_min()
   });
 
   $(document).on("scroll", function () {
     setHeader();
     setDane();
+    setDane_min()
   });
 
   initMenu();
@@ -71,6 +73,13 @@ $(document).ready(function () {
       dane.removeClass("scrolled_dane");
     }
   }
+  function setDane_min() {
+    if ($(window).scrollTop() > 100) {
+      hamb.addClass("scrolled_dane");
+    } else {
+      hamb.removeClass("scrolled_dane");
+    }
+  }
   /* 
 
   3. Init Menu
@@ -78,8 +87,8 @@ $(document).ready(function () {
   */
 
   function initMenu() {
-    if ($(".hamburger").length) {
-      var hamb = $(".hamburger");
+    if ($(".mobil").length) {
+      var hamb = $(".mobil");
 
       hamb.on("click", function (event) {
         event.stopPropagation();
