@@ -33,13 +33,11 @@ $(document).ready(function () {
   $(window).on("resize", function () {
     setHeader();
     setDane();
-    setDane_min()
   });
 
   $(document).on("scroll", function () {
     setHeader();
     setDane();
-    setDane_min()
   });
 
   initMenu();
@@ -71,13 +69,6 @@ $(document).ready(function () {
       dane.addClass("scrolled_dane");
     } else {
       dane.removeClass("scrolled_dane");
-    }
-  }
-  function setDane_min() {
-    if ($(window).scrollTop() > 100) {
-      hamb.addClass("scrolled_dane");
-    } else {
-      hamb.removeClass("scrolled_dane");
     }
   }
   /* 
