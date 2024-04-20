@@ -123,7 +123,7 @@
     -o-transform: translateY(-1px);
     transform: translateY(-1px);
   }
-  .mobil{
+  .mobil {
     display: block;
     position: absolute;
     right: 0;
@@ -172,8 +172,6 @@
   }
 }
 
-
-
 /************
 7. 959px
 ************/
@@ -199,7 +197,6 @@
     overflow: hidden;
     object-fit: cover;
   }
-
 }
 
 /************
@@ -344,7 +341,7 @@
     overflow: hidden;
     object-fit: cover;
   }
-  .home_slider_background>h1{
+  .home_slider_background > h1 {
     margin-top: 30%;
   }
 }
@@ -375,7 +372,7 @@
 ************/
 
 @media only screen and (max-width: 400px) {
-  .home_slider_background>h1{
+  .home_slider_background > h1 {
     margin-top: 47%;
   }
 }

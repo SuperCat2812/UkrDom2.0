@@ -280,9 +280,6 @@ section {
   background: #ffffff;
   z-index: 100;
 }
-.header.scrolled {
-  top: -48px;
-}
 
 /*********************************
 3.1 Top Bar
@@ -334,16 +331,10 @@ section {
   width: 100%;
   height: 103px;
 }
-.header.scrolled .header_content {
-  height: 80px;
-}
 .dane {
   position: absolute;
   right: 0;
   top: 43%;
-}
-.dane.scrolled_dane {
-  top: 48px;
 }
 
 .ul_nav {
@@ -370,11 +361,6 @@ section {
   font-size: 24px;
   color: #272727;
 }
-
-.hamburger.scrolled_dane, .sm {
-  margin-top: 6%;
-  padding-bottom: 0;
-  }
 
 .main_nav ul li .dane {
   font-size: 24px;
@@ -412,10 +398,6 @@ section {
   -ms-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
-}
-.header.scrolled .logo_container {
-  top: 48px;
-  height: 120px;
 }
 .logo_container a {
   display: block;
@@ -635,7 +617,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  max-width:100vw;
+  max-width: 100vw;
   width: 100%;
   height: 100%;
   background-image: url("../images/marianskoje.jpeg");
@@ -1194,4 +1176,3 @@ section {
 .map {
   margin: 30px;
 }
-

@@ -81,7 +81,8 @@
 ************/
 
 @media only screen and (max-width: 991px) {
-  .main_nav,.ul_nav {
+  .main_nav,
+  .ul_nav {
     display: none;
   }
   .sm {
@@ -126,7 +127,7 @@
     -o-transform: translateY(-1px);
     transform: translateY(-1px);
   }
-  .mobil{
+  .mobil {
     display: block;
     position: absolute;
     right: 0;
