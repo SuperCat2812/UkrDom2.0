@@ -25,25 +25,29 @@
 1. 1600px
 ************/
 
-@media only screen and (max-width: 1600px) {}
+@media only screen and (max-width: 1600px) {
+}
 
 /************
 2. 1440px
 ************/
 
-@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 1440px) {
+}
 
 /************
 3. 1380px
 ************/
 
-@media only screen and (max-width: 1380px) {}
+@media only screen and (max-width: 1380px) {
+}
 
 /************
 3. 1280px
 ************/
 
-@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1280px) {
+}
 
 /************
 4. 1199px
@@ -63,20 +67,21 @@
 4. 1100px
 ************/
 
-@media only screen and (max-width: 1100px) {}
+@media only screen and (max-width: 1100px) {
+}
 
 /************
 5. 1024px
 ************/
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+}
 
 /************
 6. 991px
 ************/
 
 @media only screen and (max-width: 991px) {
-
   .main_nav,
   .ul_nav {
     display: none;
@@ -138,13 +143,16 @@
     display: block;
     position: absolute;
     right: 0;
-    margin-top: 26%;
   }
 
   .hamburger {
     display: block;
     margin-top: 6%;
     font-size: 18px;
+  }
+
+  .m-col {
+    display: block;
   }
 
   .home_title h1 {
@@ -197,19 +205,22 @@
 7. 959px
 ************/
 
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+}
 
 /************
 8. 880px
 ************/
 
-@media only screen and (max-width: 880px) {}
+@media only screen and (max-width: 880px) {
+}
 
 /************
 9. 768px
 ************/
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+}
 
 /************
 10. 767px
@@ -382,13 +393,15 @@
 11. 539px
 ************/
 
-  @media only screen and (max-width: 539px) {}
+  @media only screen and (max-width: 539px) {
+  }
 
   /************
 12. 480px
 ************/
 
-  @media only screen and (max-width: 480px) {}
+  @media only screen and (max-width: 480px) {
+  }
 
   /************
 13. 479px
@@ -404,5 +417,6 @@
 14. 400px
 ************/
 
-  @media only screen and (max-width: 400px) {}
+  @media only screen and (max-width: 400px) {
+  }
 }

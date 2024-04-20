@@ -104,7 +104,8 @@ a:hover {
   color: #ffd500;
 }
 
-p::selection {}
+p::selection {
+}
 
 h1 {
   font-size: 48px;
@@ -143,7 +144,8 @@ h2::selection,
 h3::selection,
 h4::selection,
 h5::selection,
-h6::selection {}
+h6::selection {
+}
 
 .form-control {
   color: #db5246;
