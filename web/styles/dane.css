@@ -104,8 +104,6 @@ a:hover {
   color: #ffd500;
 }
 
-p::selection {
-}
 
 h1 {
   font-size: 48px;
@@ -137,14 +135,6 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
-}
-
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-h6::selection {
 }
 
 .form-control {
