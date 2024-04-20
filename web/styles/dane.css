@@ -371,6 +371,11 @@ section {
   color: #272727;
 }
 
+.hamburger.scrolled_dane, .sm {
+  margin-top: 6%;
+  padding-bottom: 0;
+  }
+
 .main_nav ul li .dane {
   font-size: 24px;
   font-weight: 600;
