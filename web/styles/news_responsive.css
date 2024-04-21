@@ -81,37 +81,47 @@
   .main_nav {
     display: none;
   }
+
   .sm {
     display: inline;
   }
+
   .logo_container,
   .footer_logo_container {
     width: 181px;
   }
+
   .logo_content {
     padding-left: 28px;
   }
+
   .logo_text {
     font-size: 24px;
   }
+
   .logo_sub {
     font-size: 12px;
     font-weight: 400;
   }
+
   .top_bar_content {
     padding-left: 166px;
   }
+
   .top_bar_item {
     margin-left: 27px;
   }
+
   .top_bar_item a {
     font-size: 12px;
   }
+
   .emergencies {
     font-size: 12px;
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .logo_box {
     width: 18px;
     height: 18px;
@@ -123,25 +133,45 @@
     -o-transform: translateY(-1px);
     transform: translateY(-1px);
   }
+
+  .mobil {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 26%;
+  }
+
   .hamburger {
     display: block;
+    margin-top: 6%;
+    font-size: 18px;
   }
+
+  .m-col {
+    display: block;
+  }
+
   .home_title h1 {
     font-size: 56px;
   }
+
   .boxes {
     padding-top: 10%;
   }
+
   .box_col {
     margin-top: 0;
   }
+
   .box_col:not(:last-child) {
     margin-bottom: 30px;
   }
+
   .box {
     height: auto;
     padding-bottom: 40px;
   }
+
   .about_image {
     position: relative;
     right: auto;
@@ -149,22 +179,23 @@
     text-align: center;
     margin-top: 55px;
   }
+
   .footer_column {
     padding-top: 75px;
   }
+
   .copyright_content {
     height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .footer_social ul {
     margin-right: 0;
     margin-left: -5px;
     margin-top: 15px;
   }
 }
-
-
 
 /************
 7. 959px
@@ -191,7 +222,6 @@
     overflow: hidden;
     object-fit: cover;
   }
-
 }
 
 /************
@@ -202,23 +232,29 @@
   .top_bar {
     display: none;
   }
+
   .logo_container,
   .footer_logo_container {
     height: 127px;
   }
+
   .logo {
     margin-top: 9px;
   }
+
   .home_content_inner {
     width: 100%;
   }
+
   .dept_text {
     margin-top: 15px;
   }
+
   .dept_button {
     position: relative;
     margin-top: 20px;
   }
+
   .cta_content h2 {
     font-size: 36px;
   }
@@ -227,6 +263,7 @@
     width: 100%;
   }
 }
+
 /************
 11. 575px
 ************/
@@ -235,54 +272,68 @@
   p {
     font-size: 13px;
   }
+
   .header.scrolled {
     top: 0px !important;
   }
+
   .header_content,
   .header.scrolled .header_content {
     height: 60px;
   }
+
   .header.scrolled .logo_container {
     top: 0;
   }
+
   .header.scrolled .logo_container {
     height: 77px;
   }
-  .hamburger i {
+
+  .mobil i {
     font-size: 20px;
   }
+
   .logo_container,
   .footer_logo_container {
     width: 141px;
     height: 77px;
   }
+
   .logo_content {
     padding-left: 20px;
   }
+
   .logo_text {
     font-size: 16px;
   }
+
   .logo_box {
     width: 12px;
     height: 12px;
     line-height: 12px;
     font-size: 12px;
   }
+
   .logo_sub {
     font-size: 10px;
     padding-left: 1px;
   }
+
   .menu {
     top: 90px;
   }
+
   .menu_close_container {
     top: 20px;
     right: 20px;
   }
+
   .home {
     max-height: 50vh;
     height: 300px;
   }
+
   .home_content {
     top: calc(50% + 34px);
     -webkit-transform: translateY(-50%);
@@ -291,37 +342,43 @@
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
   .home_title h1 {
     font-size: 36px;
   }
+
   .home_text p {
     font-size: 13px;
   }
+
   .menu_container {
     width: 100vw;
     right: -100vw;
   }
+
   .menu_item a {
     font-size: 20px;
   }
+
   .section_title h2 {
     font-size: 24px;
   }
-  .button {
-    /* height: 41px; */
-  }
+
   .button a {
     font-size: 11px;
     line-height: 41px;
     padding-left: 29px;
     padding-right: 34px;
   }
+
   .box {
     padding-left: 25px;
   }
+
   .working_hours {
     padding-right: 30px;
   }
+
   .cta_content h2 {
     font-size: 28px;
   }
@@ -336,8 +393,9 @@
     overflow: hidden;
     object-fit: cover;
   }
-  .home_slider_background>h1{
-    margin-top: 22%;
+
+  .home_slider_background > h1 {
+    margin-top: 30%;
   }
 }
 
@@ -367,7 +425,5 @@
 ************/
 
 @media only screen and (max-width: 400px) {
-  /* .home_slider_background>h1{
-    margin-top: 47%;
-  } */
+
 }
