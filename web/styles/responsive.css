@@ -221,6 +221,13 @@
     width: 100%;
   }
 
+  .gallery_img {
+    display: block;
+    width: 30%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
   /************
 11. 575px
 ************/
@@ -323,6 +330,8 @@
     .footer-row {
       flex-wrap: wrap;
     }
+
+    
   }
 
   /************
@@ -337,6 +346,12 @@
 ************/
 
   @media only screen and (max-width: 480px) {
+    .gallery_img {
+      display: block;
+      width: 45%;
+      overflow: hidden;
+      object-fit: cover;
+    }
   }
 
   /************

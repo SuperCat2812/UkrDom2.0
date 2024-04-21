@@ -187,7 +187,7 @@
 @media only screen and (max-width: 768px) {
   .gallery_img {
     display: block;
-    width: 48%;
+    width: 30%;
     overflow: hidden;
     object-fit: cover;
   }
@@ -337,7 +337,7 @@
     object-fit: cover;
   }
   .home_slider_background>h1{
-    margin-top: 30%;
+    margin-top: 22%;
   }
 }
 
@@ -367,7 +367,7 @@
 ************/
 
 @media only screen and (max-width: 400px) {
-  .home_slider_background>h1{
+  /* .home_slider_background>h1{
     margin-top: 47%;
-  }
+  } */
 }

@@ -22,60 +22,14 @@ $(document).ready(function () {
 
   */
 
-  var header = $(".header");
-  var hamb = $(".hamburger");
   var hambActive = false;
   var menuActive = false;
-  var dane = $(".dane");
+ 
 
-  setHeader();
-
-  $(window).on("resize", function () {
-    setHeader();
-    setDane();
-  });
-
-  $(document).on("scroll", function () {
-    setHeader();
-    setDane();
-  });
 
   initMenu();
   initHomeSlider();
   initSvg();
-
-  /* 
-
-  2. Set Header
-
-  */
-
-  function setHeader() {
-    if ($(window).scrollTop() > 100) {
-      header.addClass("scrolled");
-    } else {
-      header.removeClass("scrolled");
-    }
-  }
-
-  /* 
- 
-   2. Set dane
- 
-   */
-
-  function setDane() {
-    if ($(window).scrollTop() > 100) {
-      dane.addClass("scrolled_dane");
-    } else {
-      dane.removeClass("scrolled_dane");
-    }
-  }
-  /* 
-
-  3. Init Menu
-
-  */
 
   function initMenu() {
     if ($(".hamburger").length) {
