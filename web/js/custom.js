@@ -158,7 +158,7 @@ $(document).ready(function () {
     modal: document.querySelector(".more-block"),
   };
 
-  refs.openBtn.addEventListener("click", toggleModal);
+  refs?.openBtn?.addEventListener("click", toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
