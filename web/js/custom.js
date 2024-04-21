@@ -22,69 +22,14 @@ $(document).ready(function () {
 
   */
 
-  var header = $(".header");
-  var hamb = $(".hamburger");
   var hambActive = false;
   var menuActive = false;
-  var dane = $(".dane");
+ 
 
-  setHeader();
-
-  $(window).on("resize", function () {
-    setHeader();
-    setDane();
-    setDane_min()
-  });
-
-  $(document).on("scroll", function () {
-    setHeader();
-    setDane();
-    setDane_min()
-  });
 
   initMenu();
   initHomeSlider();
   initSvg();
-
-  /* 
-
-  2. Set Header
-
-  */
-
-  function setHeader() {
-    if ($(window).scrollTop() > 100) {
-      header.addClass("scrolled");
-    } else {
-      header.removeClass("scrolled");
-    }
-  }
-
-  /* 
- 
-   2. Set dane
- 
-   */
-
-  function setDane() {
-    if ($(window).scrollTop() > 100) {
-      dane.addClass("scrolled_dane");
-    } else {
-      dane.removeClass("scrolled_dane");
-    }
-  }
-  function setDane_min() {
-    if ($(window).scrollTop() > 100) {
-      hamb.addClass("scrolled_dane");
-    } else {
-      hamb.removeClass("scrolled_dane");
-    }
-  }
-  /* 
-
-  3. Init Menu
-
-  */
 
   function initMenu() {
     if ($(".mobil").length) {
@@ -213,7 +158,7 @@ $(document).ready(function () {
     modal: document.querySelector(".more-block"),
   };
 
-  refs.openBtn?.addEventListener("click", toggleModal);
+  refs?.openBtn?.addEventListener("click", toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
