@@ -383,6 +383,10 @@
     .footer-row {
       flex-wrap: wrap;
     }
+    .home_slider_background > h1 {
+      margin-top: 47%;
+    }
+  }
   }
 
   /************
@@ -414,5 +418,4 @@
 ************/
 
   @media only screen and (max-width: 400px) {
-  }
 }
