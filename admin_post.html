@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create_post</title>
+    <link rel="stylesheet" href="./styles/create.post.css">
+</head>
+<body>
+    <div>
+    <p>Name</p>
+    <input type="text" id="name">
+    <p>About</p>
+    <textarea id="about" name="about" rows="4" cols="50" required></textarea>
+    <p>Start_date</p>
+    <input type="date" name="" id="start_date">
+    <p>End_date</p>
+    <input type="date" name="" id="end_date">
+    <p>Image</p>
+    <input type="file" id="imageInput" />
+    <button onclick="uploadImage()">create_post</button>
+    </div>
+    <script type="module" src="./js/create_post.js"></script>
+</body>
+</html>
