@@ -15,3 +15,7 @@
 .start_day,.end_day{
     font-size: 14px;
 }
+
+p{
+    margin-bottom: 10px !important;
+}
