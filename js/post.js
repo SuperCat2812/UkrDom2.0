@@ -28,8 +28,8 @@ async function fetchPosts() {
       postElement.innerHTML = `
         <h2>${postData.name_post}</h2>
         <p>${postData.about_post}</p>
-        <p>Start Date: ${postData.start_date}</p>
-        <p>End Date: ${postData.end_date}</p>
+        <p class="start_day">Start Date: ${postData.start_date}</p>
+        <p class="end_day">End Date: ${postData.end_date}</p>
         <img src="${postData.url}" alt="${postData.name_post}" width="200" />
       `;
       postsContainer.appendChild(postElement);
