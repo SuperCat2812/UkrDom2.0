@@ -25,11 +25,14 @@ async function fetchPosts() {
     querySnapshot.forEach((doc) => {
       const postData = doc.data();
       const postElement = document.createElement('div');
+      let date_start=new Date(postData.start_date).toLocaleDateString();
+      let date_end=new Date(postData.end_date).toLocaleDateString();
+      console.log(date);
       postElement.innerHTML = `
         <h2>${postData.name_post}</h2>
         <p>${postData.about_post}</p>
-        <p>Start Date: ${postData.start_date}</p>
-        <p>End Date: ${postData.end_date}</p>
+        <p class="start_day">Start Date: ${date_start}</p>
+        <p class="end_day">End Date: ${date_end}</p>
         <img src="${postData.url}" alt="${postData.name_post}" width="200" />
       `;
       postsContainer.appendChild(postElement);
