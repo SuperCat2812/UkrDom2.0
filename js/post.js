@@ -27,7 +27,6 @@ async function fetchPosts() {
       const postElement = document.createElement('div');
       let date_start=new Date(postData.start_date).toLocaleDateString();
       let date_end=new Date(postData.end_date).toLocaleDateString();
-      console.log(date);
       postElement.innerHTML = `
         <h2>${postData.name_post}</h2>
         <p>${postData.about_post}</p>
