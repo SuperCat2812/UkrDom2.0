@@ -82,5 +82,34 @@ async function uploadImage() {
     console.error("Error uploading file or saving document: ", error);
   }
 }
+async function fetchPosts() {
+  try {
+    // Get a reference to the "posts" collection
+    const querySnapshot = await getDocs(collection(db, "posts"));
+    
+    // Get the <ul> element to display the list
+    const postsList = document.getElementById('postsList');
+
+    // Clear any existing content
+    postsList.innerHTML = '';
+
+    // Loop through the documents and append them to the list
+    querySnapshot.forEach((doc) => {
+      const data = doc.data();
+      
+      // Create a list item element
+      const listItem = document.createElement('li');
+      listItem.textContent = `Name: ${data.name_post}`;
+      
+      // Append the list item to the <ul> element
+      postsList.appendChild(listItem);
+    });
+  } catch (error) {
+    console.error("Error fetching documents: ", error);
+  }
+}
+
+// Call the function to fetch and display posts
+fetchPosts();
 
 window.uploadImage = uploadImage;
