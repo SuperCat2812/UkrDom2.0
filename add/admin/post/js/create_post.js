@@ -109,7 +109,7 @@ async function Update() {
         console.error("No document found to update");
       }
     } else {
-      console.error("No file selected for update");
+      console.log("No file selected for update");
     }
     const querySnapshot = await getDocs(collection(db, "posts"));
     let docId = "";
