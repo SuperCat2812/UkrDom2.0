@@ -33,4 +33,30 @@
   .button-hol{
     display: flex;
     flex-direction: row;
+    margin: 20px 2px;
+  }
+
+  .form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label-form{
+    margin: 9px 0px;
+  }
+
+  .form input{
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    margin-left: 0;
+  }
+
+#postsList div>li{
+font-size: 20px;
+}
+
+  #postsList div>button{
+    margin-top: 12px;
   }
