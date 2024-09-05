@@ -17,3 +17,20 @@
   p{
       display: inline;
   }
+
+  .Create{
+    width: 50%;
+    height: 50%;
+    font-size: medium ;
+  }
+  .Update{
+    margin-left: 20px;
+    width: 50%;
+    height: 50%;
+    font-size: medium;
+  }
+
+  .button-hol{
+    display: flex;
+    flex-direction: row;
+  }
