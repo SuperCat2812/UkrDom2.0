@@ -1,0 +1,23 @@
+#postsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2% auto;
+}
+#postsContainer>div{
+    margin:3.5% 3%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start_day,.end_day{
+    font-size: 14px;
+}
+
+p{
+    margin-bottom: 10px !important;
+}

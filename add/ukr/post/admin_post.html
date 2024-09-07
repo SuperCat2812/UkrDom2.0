@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create_post</title>
+    <link rel="stylesheet" href="./styles/create.post.css">
+</head>
+<body>
+
+    <div>
+    <form class="form">
+    <label class="label-form">Name</label> 
+    <input type="text" id="name"> 
+    <label class="label-form">About</label> 
+    <textarea id="about" name="about" rows="4" cols="50" required></textarea> 
+    <label class="label-form">Start_date</label> 
+    <input type="date" name="" id="start_date"> 
+    <label class="label-form">End_date</label> 
+    <input type="date" name="" id="end_date"> 
+    <label class="label-form">Image</label> 
+    <input type="file" id="imageInput" />
+    <div class="button-hol">
+        <button class="Create" onclick="Create()">Create_post</button>
+        <button class="Update" onclick="Update()">Update_post</button>
+    </div></div>
+</form>
+    <div >    <h1>Posts List</h1>
+        <ul id="postsList"></ul> 
+    </div>
+
+    <script type="module" src="./js/create_post.js"></script>
+</body>
+</html>
