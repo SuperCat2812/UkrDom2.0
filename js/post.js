@@ -15,27 +15,50 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-
 async function fetchPosts() {
   const postsContainer = document.getElementById('postsContainer');
   postsContainer.innerHTML = ''; // Clear previous content
 
+  let list_ivent = [];
+
   try {
     const querySnapshot = await getDocs(collection(db, "posts"));
+
     querySnapshot.forEach((doc) => {
       const postData = doc.data();
+      list_ivent.push(postData); // Store data into list_ivent
+    });
+
+    // Получаем текущую дату (год, месяц, день)
+    const currentDate = new Date();
+    const currentDateWithoutTime = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+
+    console.log('Текущая дата без времени:', currentDateWithoutTime);
+
+    // Фильтрация по дате начала (если start_date в тот же день или позже)
+    const filteredEvents = list_ivent.filter(event => {
+      const eventStartDate = new Date(event.start_date);
+      const eventStartDateWithoutTime = new Date(eventStartDate.getFullYear(), eventStartDate.getMonth(), eventStartDate.getDate());
+      return eventStartDateWithoutTime >= currentDateWithoutTime;
+    });
+
+    console.log('Отфильтрованные события:', filteredEvents);
+
+    // Отображение отфильтрованных событий
+    filteredEvents.forEach((postData) => {
       const postElement = document.createElement('div');
-      let date_start=new Date(postData.start_date).toLocaleDateString();
-      let date_end=new Date(postData.end_date).toLocaleDateString();
+      let date_start = new Date(postData.start_date).toLocaleDateString();
+      let date_end = new Date(postData.end_date).toLocaleDateString();
       postElement.innerHTML = `
-      <h2>${postData.name_post}</h2>
-      <img src="${postData.url}" alt="${postData.name_post}" width="200" />
+        <h2>${postData.name_post}</h2>
+        <img src="${postData.url}" alt="${postData.name_post}" width="200" />
         <p>${postData.about_post}</p>
         <p class="start_day">Start Date: ${date_start}</p>
         <p class="end_day">End Date: ${date_end}</p>
       `;
       postsContainer.appendChild(postElement);
     });
+
   } catch (error) {
     console.error("Error fetching posts: ", error);
   }
