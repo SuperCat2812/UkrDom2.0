@@ -4,13 +4,13 @@ import { getFirestore, collection, getDocs } from "https://www.gstatic.com/fireb
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDHU4xYC86SyeydbK8GPuAl40Jafh2XDPY",
-    authDomain: "test-posts-1faa0.firebaseapp.com",
-    projectId: "test-posts-1faa0",
-    storageBucket: "test-posts-1faa0.appspot.com",
-    messagingSenderId: "45372316395",
-    appId: "1:45372316395:web:46da7b9d262b5f17f8fcae"
-  };
+  apiKey: "AIzaSyDHU4xYC86SyeydbK8GPuAl40Jafh2XDPY",
+  authDomain: "test-posts-1faa0.firebaseapp.com",
+  projectId: "test-posts-1faa0",
+  storageBucket: "test-posts-1faa0.appspot.com",
+  messagingSenderId: "45372316395",
+  appId: "1:45372316395:web:46da7b9d262b5f17f8fcae"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
