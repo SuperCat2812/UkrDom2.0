@@ -1,11 +1,12 @@
 #postsContainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 2% auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 #postsContainer>div{
     margin:3.5% 3%;
     width: 30%;
