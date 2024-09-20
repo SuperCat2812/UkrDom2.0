@@ -18,7 +18,8 @@ const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const db = getFirestore(app);
 
-async function Create() {
+async function Create(event) {
+  event.preventDefault();
   const fileInput = document.getElementById('imageInput');
   const name = document.getElementById('name').value;
   const about = document.getElementById('about').value;
@@ -33,7 +34,7 @@ async function Create() {
 
   const storageRef = ref(storage, 'posts/' + file.name);
 
-  try {
+  //try {
     // Upload the file to Firebase Storage
     const snapshot = await uploadBytes(storageRef, file);
     console.log('Uploaded a blob or file!', snapshot);
@@ -57,12 +58,13 @@ async function Create() {
     });
     console.log("Document written with ID: ", docRef.id);
 
-  } catch (error) {
-    console.error("Error uploading file or saving document: ", error);
-  }
+  // } catch (error) {
+    //console.error("Error uploading file or saving document: ", error);
+ // }
 }
 
-async function Update() {
+async function Update(event) {
+  event.preventDefault();
   const fileInput = document.getElementById('imageInput');
   const name = document.getElementById('name').value;
   const about = document.getElementById('about').value;
