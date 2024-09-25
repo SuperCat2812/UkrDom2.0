@@ -1,18 +1,21 @@
 #postsContainer{
     display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    margin: 2% auto;
+    gap: 40px;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: flex-start;
+margin: 2% 2%;
 }
 
 #postsContainer>div{
-    margin:3.5% 3%;
-    width: 30%;
+gap: 20%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 4px solid gray;
+    border-radius: 10%;
+    margin: 2% 0;
+    padding: 2%;
 }
 
 .start_day,.end_day{
