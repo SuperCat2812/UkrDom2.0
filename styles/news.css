@@ -865,6 +865,18 @@ h1 {
   object-fit: cover;
 }
 
+.text {
+  font-size: 18px;
+  color: black;
+  line-height: 1.75;
+  text-align: justify;
+  width: 98%;
+}
+
+.vz-ul{
+text-decoration: none;
+}
+
 /*********************************
 7. Sidebar
 *********************************/

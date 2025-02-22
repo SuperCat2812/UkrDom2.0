@@ -1,0 +1,18 @@
+.container {
+    padding-top: 20px;
+}
+
+.subheader {
+    font-size: 26px;
+    color: black;
+    line-height: 1.75;
+}
+
+.vz-li{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.vz-ul {
+    margin-bottom: 5%;
+}
