@@ -369,6 +369,15 @@ section {
   display: none;
 }
 
+.container_baner{
+  display: flex;
+justify-content: center;
+position: relative;
+top: 20%;
+}
+
+.baner_img{ border-radius: 6px;}
+
 /*********************************
 3.3 Logo
 *********************************/
