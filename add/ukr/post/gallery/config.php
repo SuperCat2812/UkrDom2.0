@@ -1,12 +1,13 @@
 <?php
 // Настройки базы данных
-$dbHost = 'localhost';
-$dbUser = 'root';
-$dbPass = '';
-$dbName = 'ukrdom_img';
+$dbHost = 'mysql80.r6.websupport.sk';
+$dbPort = '3314';
+$dbUser = 'UkrDomZA';
+$dbPass = 'Verbatim1@2';
+$dbName = 'ukrdom_db';
+$charset = 'utf8';
 
-// Подключение к базе данных
-$conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
+$dsn = "mysql:host=$dbHost;port=$dbPort;dbname=$dbName;charset=$charset";
 
 // Проверка подключения
 if ($conn->connect_error) {
