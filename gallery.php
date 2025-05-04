@@ -109,13 +109,14 @@
 <?php
 
 // Настройки базы данных
-$dbHost = 'localhost';
-$dbUser = 'root';
-$dbPass = '';
-$dbName = 'ukrdom_img';
+$dbHost = 'mysql80.r6.websupport.sk';
+$dbPort = '3314';
+$dbUser = 'UkrDomZA';
+$dbPass = 'Verbatim1@2';
+$dbName = 'ukrdom_db';
 $charset = 'utf8';
 
-$dsn = "mysql:host=$dbHost;dbname=$dbName;charset=$charset";
+$dsn = "mysql:host=$dbHost;port=$dbPort;dbname=$dbName;charset=$charset";
 
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, // выбрасывать ошибки
