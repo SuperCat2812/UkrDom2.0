@@ -108,27 +108,7 @@
 		</div>
 <?php
 
-// Настройки базы данных
-$dbHost = 'mysql80.r6.websupport.sk';
-$dbPort = '3314';
-$dbUser = 'UkrDomZA';
-$dbPass = 'Verbatim1@2';
-$dbName = 'ukrdom_db';
-$charset = 'utf8';
-
-$dsn = "mysql:host=$dbHost;port=$dbPort;dbname=$dbName;charset=$charset";
-
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, // выбрасывать ошибки
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,       // выборка как ассоциативный массив
-    PDO::ATTR_EMULATE_PREPARES   => false,                  // отключить эмуляцию prepared statements
-];
-
-try {
-    $pdo = new PDO($dsn, $dbUser, $dbPass, $options);
-} catch (\PDOException $e) {
-    die("Ошибка подключения: " . $e->getMessage());
-}
+include_once __DIR__."/config/config.php";
 
 // Запрос к базе данных
 $sql = "SELECT image_name, image_path, description, image_data, image_type FROM image_gallery ORDER BY uploaded_at DESC";

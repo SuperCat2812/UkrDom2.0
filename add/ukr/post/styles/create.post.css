@@ -3,17 +3,17 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   div{
       display: flex;
       align-items: center;
       flex-direction: column;
   }
-  
+
   input{
       width: 60%;
   }
-  
+
   p{
       display: inline;
   }
@@ -25,8 +25,8 @@
   }
   .Update{
     margin-left: 20px;
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     font-size: medium;
   }
 
