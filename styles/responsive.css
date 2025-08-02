@@ -162,7 +162,18 @@
   .boxes {
     padding-top: 10%;
   }
+.container_baner {
+   left: 4%;
+  }
 
+  .baner_img{
+    width :92%;
+  }
+
+  .box_contener{
+    margin-top: 71%;
+    flex-direction: column;
+  }
   .box_col {
     margin-top: 0;
   }
